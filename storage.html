@@ -1,15 +1,12 @@
-var homeBody = `
 <div class="hero">
-<div class="banner">bikepacking.com
+    <div class="banner">bikepacking.com
+    </div>
+    <div class="callout">
+        <p>The gear index</p>
+        <h1>ROUND UP OF</h1>
+        <h1>DROP BAR TWENTY NINE</h1>
+    </div>
 </div>
-<div class="callout">
-    <p>The gear index</p>
-    <h1>ROUND UP OF</h1>
-    <h1>DROP BAR TWENTY NINE</h1>
-</div>
-</div>`
-
-var newsBody = `
 <div class="dispatch">
     <div class="heading">
         <p>DISPATCH</p>
@@ -50,9 +47,6 @@ var newsBody = `
         <a href="#">LOAD MORE</a>
     </div>
 </div>
-`
-
-var infoBody = `
 <div class="explain">
     <div class="wrapper">
     <div class="advert"></div>
@@ -81,9 +75,7 @@ var infoBody = `
     <div class="tooth"></div>
     <div class="ride"></div>
 </div>
-</div>`
-
-var bikeBody = `
+</div>
 <div class="statement">
 <div class="wrapper">
     <div class="snake"></div>
@@ -157,25 +149,4 @@ var bikeBody = `
     </div>
     <footer>© Copyright Year and Date BIKEPACKING.com LLC / all designs, photos & articles are property of BIKEPACKING.com</footer>
 </div>
-`
-
-function initFunction(){
-    let navID;
-    $("nav a").on("click", function(e){
-        navID = e.currentTarget.id;
-        let contentID = navID + "Body";
-        updateContent(contentID);
-        
-    })
-}
-
-function updateContent(contentName){
-    $("#inject").html(eval(contentName));
-}
-
-
-$(document).ready(function (){
-    updateContent('homeBody');
-    initFunction();
-})
-
+</div>
